@@ -1,0 +1,423 @@
+/* ══════════════════════════════════════════
+   VARIABLES & RESET
+══════════════════════════════════════════ */
+:root {
+  --mg: #E0176B;
+  --bl: #4A7AFF;
+  --navy: #0A0820;
+  --white: #ffffff;
+  --glass: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.13);
+  --text: rgba(255, 255, 255, 0.90);
+  --text-dim: rgba(255, 255, 255, 0.55);
+  --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { height: 100%; margin: 0; padding: 0; }
+
+/* ══════════════════════════════════════════
+   BACKGROUND STRATEGY
+   Image lives on body (fixed = no-repeat across slides).
+   Reveal viewport + slide-backgrounds → transparent.
+   Each section gets a semi-transparent dark overlay
+   via background-color so the body image shows through.
+══════════════════════════════════════════ */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--navy);
+}
+
+/* The bars outside the 1280px canvas also show the image */
+.reveal-viewport {
+  background-image: url('Fondo optaris.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Slides themselves are transparent — Reveal draws bg via data-background-image */
+.reveal .slides section {
+  background: transparent !important;
+  height: 100%;
+  padding: 0 !important;
+  top: 0 !important;
+}
+
+/* ══════════════════════════════════════════
+   TYPOGRAPHY — universal, overrides Reveal
+══════════════════════════════════════════ */
+* {
+  font-family: var(--font) !important;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal p,
+.reveal li,
+.reveal span,
+.reveal div,
+.reveal a,
+.reveal strong,
+.reveal em {
+  font-family: var(--font) !important;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* ══════════════════════════════════════════
+   SLIDE INNER WRAPPER
+══════════════════════════════════════════ */
+.si {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 52px 80px;
+  text-align: left;
+}
+
+/* ══════════════════════════════════════════
+   UTILITY: GRADIENT TEXT
+══════════════════════════════════════════ */
+.grad {
+  background: linear-gradient(135deg, var(--mg), var(--bl));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ══════════════════════════════════════════
+   UTILITY: ACCENT LINE
+══════════════════════════════════════════ */
+.line {
+  width: 56px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--mg), var(--bl));
+  border-radius: 2px;
+  margin-bottom: 28px;
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════
+   COVER SLIDE
+══════════════════════════════════════════ */
+.cover .si {
+  align-items: center;
+  text-align: center;
+}
+
+.cover h1 {
+  font-size: 4.8em;
+  font-weight: 800;
+  color: var(--white);
+  margin: 0 0 24px;
+  line-height: 1.1;
+  text-shadow: 0 0 60px rgba(224, 23, 107, 0.4);
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: var(--text);
+  max-width: 760px;
+  line-height: 1.75;
+  margin: 0 0 14px;
+}
+
+.pill {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--mg), var(--bl));
+  color: var(--white);
+  padding: 10px 30px;
+  border-radius: 40px;
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 22px;
+}
+
+/* ══════════════════════════════════════════
+   SECTION DIVIDER
+══════════════════════════════════════════ */
+.sec .si {
+  align-items: center;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 0.95em;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--mg);
+  margin-bottom: 20px;
+}
+
+.sec h2 {
+  font-size: 3.6em;
+  font-weight: 800;
+  color: var(--white);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sec-line {
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--mg), var(--bl));
+  border-radius: 3px;
+  margin: 32px auto 0;
+}
+
+/* ══════════════════════════════════════════
+   CONTENT SLIDE
+══════════════════════════════════════════ */
+.content h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.breadcrumb {
+  font-size: 0.82em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+/* ══════════════════════════════════════════
+   CARD
+══════════════════════════════════════════ */
+.card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  width: 100%;
+}
+
+.card p,
+.card li {
+  font-size: 1em;
+  color: var(--text);
+  line-height: 1.75;
+  margin: 0 0 6px;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.card li { margin-bottom: 6px; }
+
+.card strong,
+.card b { color: var(--white); font-weight: 600; }
+
+.card-title {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: var(--mg);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+/* ══════════════════════════════════════════
+   TWO-COLUMN LAYOUT
+══════════════════════════════════════════ */
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  width: 100%;
+}
+
+/* ══════════════════════════════════════════
+   DIANA BADGE
+══════════════════════════════════════════ */
+.diana {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(224, 23, 107, 0.10);
+  border: 1px solid rgba(224, 23, 107, 0.35);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-top: 14px;
+  font-size: 0.98em;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.diana::before {
+  content: "✦";
+  color: var(--mg);
+  font-size: 1.1em;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ══════════════════════════════════════════
+   NUMBERED STEPS
+══════════════════════════════════════════ */
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.98em;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.steps li .num {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(135deg, var(--mg), var(--bl));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72em;
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 3px;
+}
+
+/* ══════════════════════════════════════════
+   AGENDA GRID
+══════════════════════════════════════════ */
+.agenda-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.ag-item {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ag-num {
+  font-size: 2.2em;
+  font-weight: 800;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.ag-text {
+  font-size: 0.95em;
+  color: var(--text);
+  line-height: 1.45;
+  font-weight: 500;
+  padding-top: 6px;
+}
+
+/* ══════════════════════════════════════════
+   TAG / LABEL
+══════════════════════════════════════════ */
+.tag {
+  display: inline-block;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin-bottom: 10px;
+}
+
+/* ══════════════════════════════════════════
+   URL TAG
+══════════════════════════════════════════ */
+.url-tag {
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+  color: var(--mg);
+  background: rgba(224, 23, 107, 0.10);
+  border: 1px solid rgba(224, 23, 107, 0.30);
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+/* ══════════════════════════════════════════
+   THANK YOU SLIDE
+══════════════════════════════════════════ */
+.thanks .si {
+  align-items: center;
+  text-align: center;
+}
+
+.thanks h2 {
+  font-size: 5.5em;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--mg), var(--bl));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.thanks p {
+  font-size: 1.2em;
+  color: var(--text-dim);
+  margin-top: 24px;
+}
+
+/* ══════════════════════════════════════════
+   QUOTE BLOCK
+══════════════════════════════════════════ */
+.quote {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--mg);
+  border-radius: 4px;
+  font-size: 0.9em;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+/* ══════════════════════════════════════════
+   REVEAL OVERRIDES
+══════════════════════════════════════════ */
+.reveal .slides { text-align: left; }
+
+.reveal .fragment {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.reveal .fragment.fade-up {
+  transform: translateY(16px);
+  opacity: 0;
+}
+
+.reveal .fragment.fade-up.visible {
+  transform: translateY(0);
+  opacity: 1;
+}

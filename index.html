@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deyel Citizen Developer Plus — Optaris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ═══════════════════════════════════════
+     SLIDE 1 — COVER
+════════════════════════════════════════ -->
+<section class="cover">
+  <div class="si">
+    <div style="position:relative;width:100%;text-align:center;">
+      <!-- Título visible al inicio, desaparece en click 1 -->
+      <h1 class="fragment fade-out" data-fragment-index="1" style="margin:0;">
+        Deyel Citizen<br>Developer <span class="grad">Plus</span>
+      </h1>
+      <!-- DIANA aparece en el mismo click 1, encima del título -->
+      <div class="fragment fade-up" data-fragment-index="1"
+           style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+                  font-size:7em;font-weight:900;letter-spacing:0.08em;
+                  background:linear-gradient(135deg,#4A7AFF,#E0176B);
+                  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+        DIANA
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 2 — CAPACITACIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding: 40px 60px;">
+    <div class="tag">Deyel Citizen Developer Plus</div>
+    <h2>Capacitación Deyel — Caminos de Aprendizaje</h2>
+    <div class="line"></div>
+    <div class="fragment fade-up" style="flex:1;display:flex;align-items:center;justify-content:center;min-height:0;">
+      <img src="caminos.png" alt="Caminos de Aprendizaje"
+           style="max-width:100%;max-height:100%;border-radius:16px;object-fit:contain;">
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 3 — AGENDA
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Agenda</h2>
+    <div class="line"></div>
+    <div class="agenda-grid">
+      <div class="ag-item fragment fade-up">
+        <div class="ag-num grad">1</div>
+        <div class="ag-text">Introducción al Modelado de Aplicaciones con Deyel</div>
+      </div>
+      <div class="ag-item fragment fade-up">
+        <div class="ag-num grad">2</div>
+        <div class="ag-text">Análisis</div>
+      </div>
+      <div class="ag-item fragment fade-up">
+        <div class="ag-num grad">3</div>
+        <div class="ag-text">Diseño</div>
+      </div>
+      <div class="ag-item fragment fade-up">
+        <div class="ag-num grad">4</div>
+        <div class="ag-text">Construcción</div>
+      </div>
+      <div class="ag-item fragment fade-up">
+        <div class="ag-num grad">5</div>
+        <div class="ag-text">Ejecución</div>
+      </div>
+      <div class="ag-item fragment fade-up">
+        <div class="ag-num grad">6</div>
+        <div class="ag-text">Administración de Ambientes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 3b — CAPACITACIÓN EN MODELADO DEYEL
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:36px 60px;gap:16px;">
+    <div>
+      <h2 style="font-size:2.2em;margin:0 0 4px;">Capacitación en Modelado Deyel</h2>
+      <p style="font-size:1.1em;color:rgba(255,255,255,0.75);margin:0 0 16px;font-weight:400;">Una Metodología en Tres Dimensiones</p>
+      <div class="line" style="margin-bottom:0;"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;flex:1;min-height:0;align-items:stretch;">
+
+      <!-- COL IZQUIERDA — 3 items apilados -->
+      <div style="display:flex;flex-direction:column;justify-content:space-around;padding:8px 0;">
+        <div class="fragment fade-up" style="font-size:2.4em;font-weight:900;color:#fff;text-transform:uppercase;line-height:1.1;letter-spacing:-0.5px;">Comprensión<br>del Negocio</div>
+        <div class="fragment fade-up" style="font-size:2.4em;font-weight:900;color:#fff;text-transform:uppercase;line-height:1.1;letter-spacing:-0.5px;">Modelado<br>Visual<br><span style="font-size:0.55em;font-weight:400;opacity:0.65;">(Deyel)</span></div>
+        <div class="fragment fade-up" style="font-size:2.4em;font-weight:900;color:#fff;text-transform:uppercase;line-height:1.1;letter-spacing:-0.5px;">Inteligencia<br>Artificial<br>Aplicada<br><span style="font-size:0.55em;font-weight:400;opacity:0.65;">(Diana)</span></div>
+      </div>
+
+      <!-- COL DERECHA — LA NUEVA COLABORACIÓN -->
+      <div class="fragment fade-up" style="padding:32px 36px;background:rgba(255,255,255,0.07);border-radius:14px;display:flex;flex-direction:column;justify-content:center;gap:22px;overflow:hidden;">
+        <div style="font-size:1.65em;font-weight:900;color:#fff;text-transform:uppercase;line-height:1.25;letter-spacing:0.3px;">La nueva colaboración:<br><span style="background:linear-gradient(135deg,#E0176B,#4A7AFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Modelador + Deyel + Diana</span></div>
+        <div style="font-size:1.15em;color:rgba(255,255,255,0.88);line-height:1.8;">
+          <strong>Diana apoya en:</strong><br>
+          Generar propuestas &nbsp;|&nbsp; Traducir requerimientos en objetos &nbsp;|&nbsp;
+          Completar estructuras &nbsp;|&nbsp; Sugerir mejoras &nbsp;|&nbsp; Acelerar la construcción.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 3c — EVOLUCIÓN Y SOSTENIBILIDAD
+════════════════════════════════════════ -->
+<section class="content">
+  <div style="display:flex;flex-direction:column;height:100%;padding:36px 60px;gap:20px;box-sizing:border-box;">
+
+    <!-- HEADER -->
+    <div style="flex-shrink:0;">
+      <h2 style="font-size:2.2em;font-weight:800;color:#fff;margin:0 0 10px;">Evolución y Sostenibilidad de la Aplicación</h2>
+      <div style="width:56px;height:4px;background:linear-gradient(90deg,#E0176B,#4A7AFF);border-radius:2px;"></div>
+    </div>
+
+    <!-- TWO COLUMNS — stretch to fill remaining space -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;flex:1;align-items:stretch;">
+
+      <!-- LEFT -->
+      <div class="fragment fade-right"
+           style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.16);border-radius:16px;
+                  padding:32px 36px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:22px;">
+        <div>
+          <div style="font-size:1.45em;font-weight:800;color:#fff;text-transform:uppercase;line-height:1.25;margin-bottom:10px;">
+            Velocidad Inicial
+          </div>
+          <div style="font-size:1.3em;font-weight:700;background:linear-gradient(135deg,#E0176B,#4A7AFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            (con Diana)
+          </div>
+        </div>
+        <p style="margin:0;font-size:1.2em;color:rgba(255,255,255,0.88);line-height:1.6;">
+          Avance Rápido<br>(Creación por Prompts)
+        </p>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="fragment fade-left"
+           style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.16);border-radius:16px;
+                  padding:32px 36px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:22px;">
+        <div>
+          <div style="font-size:1.45em;font-weight:800;color:#fff;text-transform:uppercase;line-height:1.25;margin-bottom:10px;">
+            Sostenibilidad a Largo Plazo
+          </div>
+          <div style="font-size:1.3em;font-weight:700;background:linear-gradient(135deg,#4A7AFF,#E0176B);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            (con Deyel)
+          </div>
+        </div>
+        <p style="margin:0;font-size:1.2em;color:rgba(255,255,255,0.88);line-height:1.6;">
+          Mantenimiento Low-Code.<br>Crecimiento en Complejidad y Cambios.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BANNER -->
+    <div class="fragment fade-up"
+         style="flex-shrink:0;background:rgba(224,23,107,0.13);border:1px solid rgba(224,23,107,0.45);
+                border-radius:12px;padding:18px 32px;text-align:center;">
+      <div style="font-size:1.15em;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">
+        El Diferencial Clave de Deyel
+      </div>
+      <div style="font-size:1.1em;color:rgba(255,255,255,0.9);">
+        Simple &nbsp;|&nbsp; Trazable &nbsp;|&nbsp; Sostenible en el tiempo.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 4 — SECCIÓN: INTRODUCCIÓN
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 1</div>
+    <h2>Introducción al Modelado<br>de Aplicaciones con <span class="grad">Deyel</span></h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 5 — QUÉ APLICACIONES
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>¿Qué Aplicaciones Podemos Desarrollar?</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Tipos de aplicaciones</div>
+        <ul>
+          <li>Web / Móvil / Web y Móvil</li>
+          <li>Android, iOS, PWA</li>
+          <li>B2B vs B2C</li>
+        </ul>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Tipos de dispositivos</div>
+        <ul>
+          <li>Equipo de escritorio</li>
+          <li>Tableta</li>
+          <li>Móvil</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 6 — CÓMO CREAR
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>¿Cómo Crear Aplicaciones Deyel?</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Proceso de diseño de UX</div>
+        <p>Centrado en el usuario. Desde la investigación hasta la validación continua, cada etapa garantiza soluciones intuitivas y alineadas al negocio.</p>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Metodología Model Driven</div>
+        <p>Transforma modelos conceptuales en aplicaciones funcionales sin código, acelerando el desarrollo y reduciendo el retrabajo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 7 — CÓMO SE COMPONEN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:36px 60px;gap:16px;">
+    <div>
+      <h2 style="margin:0 0 4px;">¿Cómo se Componen las Aplicaciones?</h2>
+      <div class="line" style="margin-bottom:0;"></div>
+    </div>
+
+    <!-- Wrapper: big card + external box -->
+    <div style="display:flex;gap:20px;flex:1;min-height:0;align-items:stretch;">
+
+      <!-- GRAN TARJETA — 3 capas -->
+      <div style="flex:1;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.18);border-radius:16px;overflow:hidden;">
+
+        <!-- CAPA 1: INTERFAZ DEL USUARIO -->
+        <div style="flex:1;padding:20px 32px;border-bottom:1px solid rgba(255,255,255,0.15);background:rgba(74,122,255,0.10);display:flex;flex-direction:column;justify-content:center;gap:14px;">
+          <div class="fragment fade-up" data-fragment-index="1" style="font-size:1.5em;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#7aa8ff;">Interfaz del Usuario</div>
+          <div class="fragment fade-up" data-fragment-index="2" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span style="background:rgba(74,122,255,0.25);border:1px solid rgba(74,122,255,0.5);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Páginas</span>
+            <span style="background:rgba(74,122,255,0.25);border:1px solid rgba(74,122,255,0.5);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Tableros</span>
+            <span style="background:rgba(74,122,255,0.25);border:1px solid rgba(74,122,255,0.5);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Indicadores</span>
+            <span style="background:rgba(74,122,255,0.25);border:1px solid rgba(74,122,255,0.5);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Reportes</span>
+            <span class="fragment fade-up" data-fragment-index="7" style="background:rgba(255,200,50,0.15);border:1px dashed rgba(255,200,50,0.55);border-radius:7px;padding:3px 10px;font-size:0.72em;font-weight:600;color:#ffd966;">Reglas Embebidas</span>
+          </div>
+        </div>
+
+        <!-- CAPA 2: LÓGICA DE NEGOCIO -->
+        <div style="flex:1;padding:20px 32px;border-bottom:1px solid rgba(255,255,255,0.15);background:rgba(224,23,107,0.10);display:flex;flex-direction:column;justify-content:center;gap:14px;">
+          <div class="fragment fade-up" data-fragment-index="3" style="font-size:1.5em;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#ff6fa8;">Lógica de Negocio</div>
+          <div class="fragment fade-up" data-fragment-index="4" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span style="background:rgba(224,23,107,0.25);border:1px solid rgba(224,23,107,0.5);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Procesos de Negocio</span>
+            <span style="background:rgba(224,23,107,0.25);border:1px solid rgba(224,23,107,0.5);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Reglas Java</span>
+            <span class="fragment fade-up" data-fragment-index="7" style="background:rgba(255,200,50,0.15);border:1px dashed rgba(255,200,50,0.55);border-radius:7px;padding:3px 10px;font-size:0.72em;font-weight:600;color:#ffd966;">Reglas Embebidas</span>
+          </div>
+        </div>
+
+        <!-- CAPA 3: DATOS -->
+        <div style="flex:1;padding:20px 32px;background:rgba(60,200,120,0.08);display:flex;flex-direction:column;justify-content:center;gap:14px;">
+          <div class="fragment fade-up" data-fragment-index="5" style="font-size:1.5em;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#66d49a;">Datos</div>
+          <div class="fragment fade-up" data-fragment-index="6" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span style="background:rgba(60,200,120,0.20);border:1px solid rgba(60,200,120,0.45);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Entidades</span>
+            <span style="background:rgba(60,200,120,0.20);border:1px solid rgba(60,200,120,0.45);border-radius:7px;padding:4px 12px;font-size:0.78em;font-weight:600;color:#fff;">Listas de Valores</span>
+            <span class="fragment fade-up" data-fragment-index="7" style="background:rgba(255,200,50,0.15);border:1px dashed rgba(255,200,50,0.55);border-radius:7px;padding:3px 10px;font-size:0.72em;font-weight:600;color:#ffd966;">Reglas Embebidas</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CAJA EXTERNA — Sistemas Externos (fragment 8, alineada al centro = capa Lógica) -->
+      <div class="fragment fade-left" data-fragment-index="8" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;flex-shrink:0;max-width:190px;">
+        <div style="font-size:0.72em;color:rgba(255,255,255,0.45);text-align:center;">← Integración</div>
+        <div style="border:1px dashed rgba(255,255,255,0.32);border-radius:12px;padding:16px 18px;background:rgba(255,255,255,0.05);text-align:center;">
+          <div style="font-size:0.75em;font-weight:800;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:10px;letter-spacing:0.5px;">Sistemas Externos</div>
+          <div style="font-size:0.78em;color:rgba(255,255,255,0.85);line-height:1.7;">Reglas y Adaptadores<br>API REST<br>Webhooks</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 8 — GUÍA MODELADO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Guía para el Modelado Basado en Model Driven</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 32px;">
+        <ul class="steps" style="margin:0;padding:0;">
+          <li><span class="num">1</span><span>Determinar requerimientos</span></li>
+          <li><span class="num">2</span><span>Descubrir personajes, entidades y procesos</span></li>
+          <li><span class="num">3</span><span>Descubrir relaciones</span></li>
+          <li><span class="num">4</span><span>Prototipar entidades, procesos y páginas</span></li>
+          <li><span class="num">5</span><span>Agregar comportamiento y usabilidad</span></li>
+        </ul>
+        <ul class="steps" style="margin:0;padding:0;">
+          <li><span class="num">6</span><span>Modelar tableros e indicadores por personaje</span></li>
+          <li><span class="num">7</span><span>Reglas avanzadas e integración</span></li>
+          <li><span class="num">8</span><span>Modelar la organización</span></li>
+          <li><span class="num">9</span><span>Pasaje de objetos entre ambientes</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 9 — METODOLOGÍA UX/UI
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="tag">Enfoque centrado en el usuario + Process Thinking</div>
+    <h2>Metodología Basada en el Proceso de Diseño de UX/UI</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <ul>
+        <li>Usamos principios de UX para crear soluciones intuitivas y alineadas a las necesidades reales del usuario.</li>
+        <li>El enfoque <strong>Process Thinking</strong> guía el desarrollo desde la comprensión del problema hasta la validación continua.</li>
+        <li>Deyel permite transformar ideas en modelos funcionales listos para probar, ajustar y evolucionar rápidamente.</li>
+        <li><strong>Beneficios:</strong> mayor calidad, menor tiempo de desarrollo y menos retrabajo.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 10 — ETAPAS UX
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:40px 60px;">
+    <h2>Etapas del Proceso UX Aplicado en Deyel</h2>
+    <div class="line"></div>
+    <div class="fragment fade-up" style="flex:1;display:flex;align-items:center;justify-content:center;min-height:0;">
+      <img src="ux-etapas.png" alt="Etapas del Proceso UX"
+           style="max-width:100%;max-height:100%;border-radius:16px;object-fit:contain;">
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 11 — SECCIÓN: ANÁLISIS
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 2</div>
+    <h2><span class="grad">Análisis</span><br>Enfoque en la Metodología</h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 12 — QUÉ HACEMOS EN ANÁLISIS
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:40px 60px;">
+    <h2>¿Qué Hacemos en la Etapa de Análisis?</h2>
+    <div class="line"></div>
+    <div class="fragment fade-up" style="flex:1;display:flex;align-items:center;justify-content:center;min-height:0;">
+      <img src="ux-analisis.png" alt="Etapa de Análisis"
+           style="max-width:100%;max-height:100%;border-radius:16px;object-fit:contain;">
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 13 — PERSONAJES
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Personajes — ¿Quiénes Interactúan?</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Definición del personaje</div>
+        <ul>
+          <li>Nombre, rango de edades, gustos, actividades</li>
+          <li>Necesidades y hábitos digitales</li>
+          <li>Criterios de éxito</li>
+          <li>Herramientas: plantillas, frameworks, IA</li>
+        </ul>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Interacción con la aplicación</div>
+        <ul>
+          <li><strong>Frecuencia:</strong> Diaria, semanal, ocasional</li>
+          <li><strong>Dispositivos:</strong> Móvil, escritorio, tableta</li>
+          <li><strong>Contexto:</strong> Hogar, trabajo, movilidad</li>
+          <li><strong>Actividades:</strong> Búsqueda, compra, reserva, carga</li>
+          <li><strong>Navegación:</strong> Menús, buscador, compartir</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 14 — HISTORIAS DE USUARIO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Historias de Usuario — ¿Qué Desea Lograr el Usuario?</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Concepto</div>
+        <p>Definiciones breves que expresan lo que el usuario desea lograr. Contienen los requisitos funcionales desde la perspectiva del usuario.</p>
+        <div class="quote">"Como <em>[personaje]</em>, quiero <em>[acción]</em> para <em>[objetivo]</em>"</div>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Complementos y relación con MVP</div>
+        <ul>
+          <li>Criterios de aceptación</li>
+          <li>Notas técnicas</li>
+          <li>Herramientas: plantillas, frameworks, IA</li>
+          <li>Priorizar funcionalidades para construir primero</li>
+          <li>Identificar qué va al MVP</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 15 — MVP
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>MVP — Producto Mínimo Viable</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <p><strong>Delimitar</strong> qué funcionalidades son indispensables para una primera versión de la aplicación.</p>
+      <p style="margin-top:8px;"><strong>Filosofía:</strong> Construir rápido, validar temprano y evolucionar iterativamente.</p>
+    </div>
+    <div class="diana fragment fade-up">
+      <div>
+        <strong>Colaboración de Diana</strong><br>
+        • Priorización inicial &nbsp;·&nbsp;
+        Identificación de dependencias funcionales &nbsp;·&nbsp;
+        Sugerencia de secuencia de construcción
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 15b — VAMOS A PROBARLO
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <h2 style="font-size:3.5em;">¡Vamos a <span class="grad">Probarlo!</span></h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 16 — SECCIÓN: DISEÑO Y PROTOTIPO
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 3</div>
+    <h2><span class="grad">Diseño y Prototipo</span><br>De lo Conceptual a Deyel</h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 17 — QUÉ HACEMOS EN DISEÑO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>¿Qué Hacemos en la Etapa de Diseño y Prototipo?</h2>
+    <div class="line"></div>
+    <div class="card" style="margin-bottom:14px;">
+      <p>Transformar lo conceptual en algo tangible. <strong>Objetivo:</strong> Modelar sin necesidad de código y validar rápidamente la idea.</p>
+    </div>
+    <div class="two">
+      <div class="diana fragment fade-up" style="margin-top:0;">
+        <div>
+          <strong>Diana propone:</strong><br>
+          • Tipo de aplicación B2B o B2C<br>
+          • Canvas con acciones y userflows<br>
+          • Roles por personajes
+        </div>
+      </div>
+      <div class="diana fragment fade-up" style="margin-top:0;">
+        <div>
+          <strong>Usuario modelador:</strong><br>
+          • Revisión<br>
+          • Validación<br>
+          • Refinamiento
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 18 — PROTOTIPO FUNCIONAL
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Prototipo Funcional — Simulando la Experiencia Real</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div>
+        <div class="card" style="margin-bottom:14px;">
+          <div class="card-title">Características</div>
+          <ul>
+            <li>Versión interactiva y clickeable</li>
+            <li>Simula la experiencia real del usuario</li>
+            <li>Páginas conectadas a través de flujos</li>
+            <li>Ideal para validar navegación antes del desarrollo técnico</li>
+          </ul>
+        </div>
+        <div class="card fragment fade-up">
+          <div class="card-title">Adaptabilidad Deyel</div>
+          <p>Aplicaciones web responsivas con breakpoints para óptima adaptación a dispositivos.</p>
+        </div>
+      </div>
+      <div class="diana fragment fade-up" style="margin-top:0;align-self:stretch;">
+        <div>
+          <strong>Acelerando con Diana</strong><br><br>
+          • Genera una propuesta ejecutable<br>
+          • Genera datos de prueba en entidades<br>
+          • Aplicación lista para validar desde el día 1
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 18b — DISEÑO Y PROTOTIPO CON DIANA
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:40px 60px;">
+    <h2>Diseño y Prototipo con Diana</h2>
+    <div class="line"></div>
+    <div class="fragment fade-up" style="flex:1;display:flex;align-items:center;justify-content:center;min-height:0;">
+      <img src="ux-diseno.png" alt="Diseño y Prototipo con Diana"
+           style="max-width:100%;max-height:100%;border-radius:16px;object-fit:contain;">
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 19 — RESULTADO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Diseño y Prototipo — Resultado con Diana</h2>
+    <div class="line"></div>
+    <div class="diana fragment fade-up" style="font-size:1.05em;padding:28px 24px;">
+      <div>
+        <strong>Resultado obtenido</strong><br><br>
+        • Aplicación ejecutable<br>
+        • Con datos de prueba cargados<br>
+        • Lista para evolucionar con herramientas visuales o prompts
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 20 — SECCIÓN: CONSTRUCCIÓN
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 4</div>
+    <h2><span class="grad">Construcción</span><br>Transformando el Diseño en Aplicación</h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 21 — QUÉ HACEMOS EN CONSTRUCCIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>¿Qué Hacemos en la Etapa de Construcción?</h2>
+    <div class="line"></div>
+    <div class="card" style="margin-bottom:14px;">
+      <p>Transformar las decisiones de diseño en <strong>componentes concretos</strong> de la aplicación.</p>
+    </div>
+    <div class="diana fragment fade-up">
+      <div>
+        <strong>Con Diana</strong><br>
+        • Completar, ajustar, ampliar y consolidar la aplicación<br>
+        • Próximos pasos sugeridos automáticamente en la conversación<br>
+        • Diana conoce el contexto y puede reutilizar objetos existentes
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 22 — ACTIVIDADES DE CONSTRUCCIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Actividades Principales de la Construcción</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <ul class="steps">
+        <li><span class="num">1</span><span>Construcción de entidades: atributos, estructuras, listas de valores y relaciones</span></li>
+        <li><span class="num">2</span><span>Construcción de páginas con requerimientos específicos de interfaz</span></li>
+        <li><span class="num">3</span><span>Creación de procesos</span></li>
+        <li><span class="num">4</span><span>Incorporación de reglas avanzadas y de integración</span></li>
+        <li><span class="num">5</span><span>Creación de tableros visuales, indicadores y reportes</span></li>
+        <li><span class="num">6</span><span>Gestión de usuarios, OUs y permisos</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 23 — USABILIDAD
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Usabilidad</h2>
+    <div class="line"></div>
+    <div style="display:flex;gap:24px;align-items:center;">
+      <div style="display:flex;flex-direction:column;gap:12px;flex:0 0 260px;">
+        <div class="card fragment fade-up" style="padding:14px 16px;">
+          <div class="card-title" style="font-size:0.82em;margin-bottom:6px;">Configuraciones</div>
+          <ul style="font-size:0.75em;line-height:1.5;">
+            <li>Nombres descriptivos y claros</li>
+            <li>Íconos y descripciones</li>
+            <li>Ayudas y placeholders</li>
+            <li>Guías que orientan al usuario</li>
+          </ul>
+        </div>
+        <div class="card fragment fade-up" style="padding:14px 16px;">
+          <div class="card-title" style="font-size:0.82em;margin-bottom:6px;">Comportamiento en campos</div>
+          <ul style="font-size:0.75em;line-height:1.5;">
+            <li>Visibilidad</li>
+            <li>Obligatoriedad</li>
+            <li>Editabilidad</li>
+            <li>Cálculo</li>
+            <li>Validación</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fragment fade-up" style="flex:1;border-radius:14px;overflow:hidden;border:2px solid rgba(255,255,255,0.15);box-shadow:0 6px 32px rgba(0,0,0,0.45);">
+        <img src="ux-orden-trabajo.png" alt="Orden de trabajo" style="width:100%;display:block;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 24 — REGLAS DE INTEGRACIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Reglas de Integración y de Negocio</h2>
+    <div class="line"></div>
+    <div style="display:flex;gap:24px;align-items:stretch;">
+      <div style="display:flex;flex-direction:column;gap:12px;flex:0 0 260px;">
+        <div class="card fragment fade-up" style="padding:14px 16px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+          <div class="card-title" style="font-size:0.82em;margin-bottom:6px;">Reglas de integración</div>
+          <p style="font-size:0.75em;line-height:1.5;">Utilizan los diferentes adaptadores para integrarse con aplicaciones externas a Deyel.</p>
+        </div>
+        <div class="card fragment fade-up" style="padding:14px 16px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+          <div class="card-title" style="font-size:0.82em;margin-bottom:6px;">Reglas de negocio</div>
+          <p style="font-size:0.75em;line-height:1.5;">Contienen lógica de negocio compleja. Pueden acceder a objetos Deyel dentro de la misma plataforma.</p>
+          <p style="margin-top:8px;font-size:0.7em;color:rgba(255,255,255,0.55);">Basadas en el adaptador <strong style="color:rgba(255,255,255,0.75);">DeyelRuleSDK</strong></p>
+        </div>
+      </div>
+      <div class="fragment fade-up" style="flex:1;border-radius:14px;overflow:hidden;border:2px solid rgba(255,255,255,0.15);box-shadow:0 6px 32px rgba(0,0,0,0.45);">
+        <img src="ux-reglas.png" alt="Reglas de negocio" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 25 — ADAPTADOR
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Integración Desde Aplicaciones Deyel</h2>
+    <div class="line"></div>
+    <div style="display:flex;gap:24px;align-items:stretch;">
+      <div style="display:flex;flex-direction:column;gap:12px;flex:0 0 260px;">
+        <div class="card fragment fade-up" style="padding:14px 16px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+          <div class="card-title" style="font-size:0.82em;margin-bottom:6px;">Al definir un adaptador, se configuran:</div>
+          <ul style="font-size:0.75em;line-height:1.5;">
+            <li>Las propiedades que identifican a la aplicación</li>
+            <li>La forma de establecer la comunicación</li>
+            <li>Los datos para la conexión</li>
+            <li>Las operaciones que la aplicación expone</li>
+          </ul>
+        </div>
+        <div class="diana fragment fade-up" style="font-size:0.78em;">Diana conoce los adaptadores disponibles en Deyel y puede orientarnos al crear una regla.</div>
+      </div>
+      <div class="fragment fade-up" style="flex:1;border-radius:14px;overflow:hidden;border:2px solid rgba(255,255,255,0.15);box-shadow:0 6px 32px rgba(0,0,0,0.45);">
+        <img src="ux-adaptador.png" alt="Adaptador SAP" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 26 — SECCIÓN: DEMO B2C
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Demo</div>
+    <h2>Demo de Aplicación <span class="grad">B2C</span></h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 27 — GENERACIÓN B2C
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Generación de una Aplicación B2C</h2>
+    <div class="line"></div>
+    <div class="card" style="margin-bottom:14px;">
+      <div class="card-title">Prompt de generación</div>
+      <div class="quote">"Modelar una aplicación B2C que contemple un portal público donde los posibles clientes puedan conocer los servicios y la historia de la empresa, y los clientes puedan acceder a su flota y las órdenes de trabajo para sus propios vehículos, y puedan incorporar nuevos camiones, basada en la aplicación B2B previamente generada."</div>
+    </div>
+    <div class="card fragment fade-up">
+      <div class="card-title">Páginas generadas</div>
+      <ul style="display:flex;gap:32px;list-style:none;padding:0;margin:0;">
+        <li>• Landing pública</li>
+        <li>• Home del personaje</li>
+        <li>• Páginas vinculadas a las acciones</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 28 — SECCIÓN: EJECUCIÓN
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 5</div>
+    <h2><span class="grad">Ejecución</span></h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 29 — CÓMO SE USA
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>¿Cómo se Usa la Aplicación?</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <div class="card-title">Canales de acceso</div>
+      <ul>
+        <li>Desde un <strong>navegador web</strong></li>
+        <li>Desde otro sitio: <strong>embebiendo partes</strong></li>
+        <li>Desde dispositivos móviles: <strong>Navegador o PWA</strong></li>
+        <li>Mediante <strong>Deyel API REST</strong> — para integración con aplicaciones externas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 30 — INVITACIÓN A USUARIOS
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Invitación a Usuarios desde una Aplicación</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <div class="card-title">Proceso de invitación</div>
+      <ul class="steps">
+        <li><span class="num">1</span><span>Se definen los nuevos usuarios</span></li>
+        <li><span class="num">2</span><span>Se selecciona un rol de una lista</span></li>
+        <li><span class="num">3</span><span>Se envía mail automáticamente</span></li>
+        <li><span class="num">4</span><span>La página de invitación puede configurarse</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 31 — CONSOLA ADMINISTRACIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Consola de Administración</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Menú principal</div>
+        <ul>
+          <li><strong>Seguridad</strong> — Tus Aplicaciones, Recursos a tu alcance</li>
+          <li><strong>Aplicaciones</strong> — Modelador, Ambiente, Seguridad</li>
+        </ul>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">URL de acceso</div>
+        <div class="url-tag">https://miambiente.deyel.com/deyelAdmin</div>
+        <p style="margin-top:14px;font-size:0.88em;color:rgba(255,255,255,0.55);">Configuración, gestión del ambiente y seguridad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 32 — APLICACIONES
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Consola de Administración</div>
+    <h2>Aplicaciones</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <ul>
+        <li>Lista de aplicaciones</li>
+        <li>Construcción de aplicaciones y cambios</li>
+        <li>Instalación de aplicaciones y cambios</li>
+        <li>Consola de ejecución</li>
+        <li>Consola de eventos</li>
+        <li>Listas de valores</li>
+        <li>Reportes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 33 — CONSOLA DE EJECUCIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Consola de Ejecución de Aplicaciones</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Para qué sirve</div>
+        <p>Revisar la ejecución de los objetos modelados, a través del registro de todas las acciones que ocurren durante su ejecución.</p>
+        <p style="margin-top:8px;">Permite definir <strong>niveles de registro</strong> para conocer el comportamiento según las necesidades.</p>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Por ambiente</div>
+        <ul>
+          <li><strong>Desarrollo:</strong> Todo lo ejecutado disponible</li>
+          <li><strong>Producción:</strong> Enfocarse en performance y errores</li>
+        </ul>
+        <div class="card-title" style="margin-top:16px;">Elementos</div>
+        <ul>
+          <li>Indicadores</li>
+          <li>Grilla de eventos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 34 — CONFIGURACIÓN CONSOLA
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Configuración de la Consola</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Registro</div>
+        <ul>
+          <li>Activar el registro</li>
+          <li>Registrar una o varias aplicaciones</li>
+          <li>Activar tipos de objeto y acciones DeyelSDK</li>
+          <li>Seleccionar rango de fechas</li>
+          <li>Nivel: <strong>ERROR / WARNING / INFO</strong></li>
+        </ul>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:14px;">
+          <div class="card-title">Notificación</div>
+          <ul>
+            <li>Grilla de notificaciones configuradas</li>
+            <li>Informadas por email o mensajería</li>
+          </ul>
+        </div>
+        <div class="card fragment fade-up">
+          <div class="card-title">Carga</div>
+          <ul>
+            <li>Por día completo o rango horario</li>
+            <li>Notificación al finalizar</li>
+            <li>Cantidad de días definida en el ambiente</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 35 — CONSOLA DE LOGS
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <h2>Consola de Logs</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <div class="card-title">Propósito: Auditoría</div>
+      <p>Se registran:</p>
+      <ul>
+        <li>Funciones de seguridad que tienen habilitada la propiedad <strong>Auditoría por Accesos</strong></li>
+        <li>Eventos de seguridad predeterminados</li>
+      </ul>
+      <p style="margin-top:14px;color:rgba(255,255,255,0.55);font-size:0.9em;">Tiempo de almacenamiento configurado en el ambiente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 36 — SECCIÓN: ADMIN AMBIENTES
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 6</div>
+    <h2><span class="grad">Administración<br>de Ambientes</span></h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 37 — CONSTRUCCIÓN E INSTALACIÓN INTRO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Administración de Ambientes</div>
+    <h2>Construcción e Instalación de Aplicaciones y Cambios</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Necesidad</div>
+        <p>Implementar nuevas aplicaciones y transferir modificaciones de forma segura y confiable.</p>
+        <p style="margin-top:10px;"><strong>Flujo:</strong> Desarrollo &rarr; Test &rarr; Producción</p>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Funcionalidad</div>
+        <ul>
+          <li>Facilita la integración continua de aplicaciones</li>
+          <li>Permite el pasaje ordenado de cambios entre ambientes</li>
+          <li>El resultado es un paquete <strong>(archivo .zip)</strong> instalable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 38 — ASPECTOS DESTACADOS
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Administración de Ambientes</div>
+    <h2>Aspectos Destacados</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <ul class="steps">
+        <li><span class="num">✓</span><span><strong>Construcción:</strong> Deyel genera un paquete instalable con datos de configuración y objetos seleccionados</span></li>
+        <li><span class="num">✓</span><span><strong>Instalación:</strong> Deyel toma el paquete y lo instala en el ambiente destino, informando los resultados</span></li>
+        <li><span class="num">✓</span><span><strong>Instalación Atómica:</strong> El paquete se instala completo o no se instala nada</span></li>
+        <li><span class="num">✓</span><span><strong>Registro:</strong> Cada construcción e instalación queda registrada con su contenido y estado</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 39 — CONSTRUCCIÓN: CONCEPTO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Administración de Ambientes — Construcción</div>
+    <h2>Construcción</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <p>Colección de objetos seleccionados y datos de entidades que se requiere instalar en un ambiente.</p>
+      <div class="card-title" style="margin-top:18px;">Contenido posible</div>
+      <ul>
+        <li>Una o más aplicaciones completas con todos sus objetos</li>
+        <li>Objetos seleccionados puntualmente de una o más aplicaciones</li>
+        <li>Datos de entidades</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 40 — CONSTRUCCIÓN DE APLICACIONES
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
+    <h2>Construcción de Aplicaciones y Cambios</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Pasos</div>
+        <ul class="steps">
+          <li><span class="num">1</span><span>Definición de la construcción</span></li>
+          <li><span class="num">2</span><span>Selección de objetos</span></li>
+          <li><span class="num">3</span><span>Gestión de dependencias</span></li>
+          <li><span class="num">4</span><span>Selección opcional de datos</span></li>
+          <li><span class="num">5</span><span>Generación del paquete</span></li>
+          <li><span class="num">6</span><span>Descarga del paquete</span></li>
+        </ul>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Selección de objetos</div>
+        <ul>
+          <li>Buscar, filtrar y seleccionar objetos publicados</li>
+          <li>Verificar precedentes y dependientes</li>
+          <li>Puede construirse sin dependientes si ya existen en destino</li>
+        </ul>
+        <div class="card-title" style="margin-top:14px;">Selección de entidades</div>
+        <p>Incluir datos de entidades para transferir junto con los objetos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 41 — INSTALACIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
+    <h2>Instalación de Aplicaciones y Cambios</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Acciones durante instalación</div>
+        <ul>
+          <li>Crea objetos inexistentes</li>
+          <li>Actualiza los existentes</li>
+          <li>No modifica lo que no está incluido</li>
+          <li><strong>Instalación atómica:</strong> Todo o nada</li>
+        </ul>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Procesamiento</div>
+        <ul class="steps">
+          <li><span class="num">1</span><span>Análisis del estado de objetos dependientes</span></li>
+          <li><span class="num">2</span><span>Validaciones de integridad del modelado</span></li>
+          <li><span class="num">3</span><span>Verificación de objetos precedentes</span></li>
+          <li><span class="num">4</span><span>Importación y publicación de objetos</span></li>
+        </ul>
+        <div class="diana" style="margin-top:12px;font-size:0.88em;">Deyel Bot notifica la finalización y el estado por mensaje.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 42 — MUCHAS GRACIAS
+════════════════════════════════════════ -->
+<section class="thanks" data-transition="zoom">
+  <div class="si">
+    <h2>Muchas Gracias</h2>
+    <p>Deyel Citizen Developer Plus &nbsp;·&nbsp; Optaris &nbsp;·&nbsp; Julio 2026</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CIERRE ES / EN / PT
+════════════════════════════════════════ -->
+<section class="cover">
+  <div class="si">
+    <h1>Deyel Citizen<br>Developer</h1>
+    <p class="tagline fragment fade-up">En Optaris nos impulsa la innovación y el uso de tecnologías de vanguardia para desarrollar soluciones que brindan a nuestros clientes mayor visibilidad de sus operaciones y la capacidad de escalar sus negocios.</p>
+    <p class="tagline fragment fade-up">Ubicamos al usuario de negocio en el centro de cada iniciativa, ofreciéndole herramientas revolucionarias y de bajo costo, diseñadas para generar un impacto real.</p>
+    <div class="pill fragment fade-up">Deyel Citizen Developer Plus</div>
+  </div>
+</section>
+
+<section class="cover">
+  <div class="si">
+    <h1>Deyel Citizen<br>Developer</h1>
+    <p class="tagline fragment fade-up">At Optaris, we are driven by innovation and the use of cutting-edge technologies to develop solutions that give our customers greater visibility into their operations and the ability to scale their businesses.</p>
+    <p class="tagline fragment fade-up">We place the business user at the center of every initiative, offering them revolutionary, low-cost tools designed to make a real impact.</p>
+    <div class="pill fragment fade-up">Deyel Citizen Developer Plus</div>
+  </div>
+</section>
+
+<section class="cover">
+  <div class="si">
+    <h1>Deyel Citizen<br>Developer</h1>
+    <p class="tagline fragment fade-up">Na Optaris, somos movidos pela inovação e pela utilização de tecnologias de ponta para desenvolver soluções que proporcionam aos nossos clientes uma maior visibilidade das suas operações e a capacidade de expandir os seus negócios.</p>
+    <p class="tagline fragment fade-up">Colocamos o utilizador empresarial no centro de cada iniciativa, oferecendo-lhe ferramentas revolucionárias e de baixo custo, concebidas para gerar um impacto real.</p>
+    <div class="pill fragment fade-up">Deyel Citizen Developer Plus</div>
+  </div>
+</section>
+
+</div><!-- /slides -->
+</div><!-- /reveal -->
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
