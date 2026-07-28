@@ -856,18 +856,21 @@
   <div class="si">
     <h2>Consola de Administración</h2>
     <div class="line"></div>
+    <div class="card" style="margin-bottom:14px;">
+      <p>Aspectos vinculados con la configuración y la gestión del ambiente.</p>
+    </div>
     <div class="two">
       <div class="card fragment fade-up">
-        <div class="card-title">Menú principal</div>
+        <div class="card-title">Menú</div>
         <ul>
+          <li><strong>Panel principal</strong></li>
           <li><strong>Seguridad</strong> — Tus Aplicaciones, Recursos a tu alcance</li>
           <li><strong>Aplicaciones</strong> — Modelador, Ambiente, Seguridad</li>
         </ul>
       </div>
       <div class="card fragment fade-up">
-        <div class="card-title">URL de acceso</div>
+        <div class="card-title">URL</div>
         <div class="url-tag">https://miambiente.deyel.com/deyelAdmin</div>
-        <p style="margin-top:14px;font-size:0.88em;color:rgba(255,255,255,0.55);">Configuración, gestión del ambiente y seguridad.</p>
       </div>
     </div>
   </div>
@@ -907,14 +910,14 @@
       <div class="card fragment fade-up">
         <div class="card-title">Necesidad</div>
         <p>Implementar nuevas aplicaciones y transferir modificaciones de forma segura y confiable.</p>
-        <p style="margin-top:10px;"><strong>Flujo:</strong> Desarrollo &rarr; Test &rarr; Producción</p>
+        <p style="margin-top:10px;"><strong>Flujo:</strong> Del ambiente de desarrollo a test, y finalmente, a producción.</p>
       </div>
       <div class="card fragment fade-up">
         <div class="card-title">Funcionalidad</div>
         <ul>
           <li>Facilita la integración continua de aplicaciones</li>
           <li>Permite el pasaje ordenado de cambios entre ambientes</li>
-          <li>El resultado es un paquete <strong>(archivo .zip)</strong> instalable</li>
+          <li>El resultado de la construcción es un paquete <strong>(archivo .zip)</strong> que se utiliza para la instalación</li>
         </ul>
       </div>
     </div>
@@ -932,42 +935,25 @@
     <div class="card fragment fade-up">
       <ul class="steps">
         <li><span class="num">✓</span><span><strong>Construcción:</strong> Deyel genera un paquete instalable con datos de configuración y objetos seleccionados</span></li>
-        <li><span class="num">✓</span><span><strong>Instalación:</strong> Deyel toma el paquete y lo instala en el ambiente destino, informando los resultados</span></li>
+        <li><span class="num">✓</span><span><strong>Instalación:</strong> Deyel toma el paquete y lo instala en el ambiente destino, informando los resultados de la instalación</span></li>
         <li><span class="num">✓</span><span><strong>Instalación Atómica:</strong> El paquete se instala completo o no se instala nada</span></li>
-        <li><span class="num">✓</span><span><strong>Registro:</strong> Cada construcción e instalación queda registrada con su contenido y estado</span></li>
+        <li><span class="num">✓</span><span><strong>Registro de construcciones e instalaciones:</strong> Las construcciones se registran con su contenido y se guarda un registro de cada instalación</span></li>
       </ul>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════
-     SLIDE 36 — CONSTRUCCIÓN: CONCEPTO
-════════════════════════════════════════ -->
-<section class="content">
-  <div class="si">
-    <div class="breadcrumb">Administración de Ambientes — Construcción</div>
-    <h2>Construcción</h2>
-    <div class="line"></div>
-    <div class="card fragment fade-up">
-      <p>Colección de objetos seleccionados y datos de entidades que se requiere instalar en un ambiente.</p>
-      <div class="card-title" style="margin-top:18px;">Contenido posible</div>
-      <ul>
-        <li>Una o más aplicaciones completas con todos sus objetos</li>
-        <li>Objetos seleccionados puntualmente de una o más aplicaciones</li>
-        <li>Datos de entidades</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SLIDE 37 — CONSTRUCCIÓN DE APLICACIONES
+     SLIDE 36 — CONSTRUCCIÓN DE APLICACIONES
 ════════════════════════════════════════ -->
 <section class="content">
   <div class="si">
     <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
     <h2>Construcción de Aplicaciones y Cambios</h2>
     <div class="line"></div>
+    <div class="card" style="margin-bottom:14px;">
+      <p>Permite seleccionar aplicaciones o cambios y generar un paquete instalable.</p>
+    </div>
     <div class="two">
       <div class="card fragment fade-up">
         <div class="card-title">Pasos</div>
@@ -981,48 +967,54 @@
         </ul>
       </div>
       <div class="card fragment fade-up">
-        <div class="card-title">Selección de objetos</div>
-        <ul>
-          <li>Buscar, filtrar y seleccionar objetos publicados</li>
-          <li>Verificar precedentes y dependientes</li>
-          <li>Puede construirse sin dependientes si ya existen en destino</li>
-        </ul>
-        <div class="card-title" style="margin-top:14px;">Selección de entidades</div>
-        <p>Incluir datos de entidades para transferir junto con los objetos.</p>
+        <div class="card-title">Trazabilidad</div>
+        <p>Registro y trazabilidad de los pasajes entre ambientes.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════
-     SLIDE 38 — INSTALACIÓN
+     SLIDE 37 — INSTALACIÓN
 ════════════════════════════════════════ -->
 <section class="content">
   <div class="si">
     <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
     <h2>Instalación de Aplicaciones y Cambios</h2>
     <div class="line"></div>
+    <div class="card" style="margin-bottom:14px;">
+      <p>Instalación a partir del paquete generado en la construcción.</p>
+    </div>
     <div class="two">
       <div class="card fragment fade-up">
-        <div class="card-title">Acciones durante instalación</div>
+        <div class="card-title">Acciones</div>
         <ul>
           <li>Crea objetos inexistentes</li>
           <li>Actualiza los existentes</li>
           <li>No modifica lo que no está incluido</li>
-          <li><strong>Instalación atómica:</strong> Todo o nada</li>
+          <li><strong>Instalación atómica:</strong> se ejecuta completamente o no se aplica ningún cambio</li>
         </ul>
       </div>
       <div class="card fragment fade-up">
-        <div class="card-title">Procesamiento</div>
+        <div class="card-title">Pasos</div>
         <ul class="steps">
-          <li><span class="num">1</span><span>Análisis del estado de objetos dependientes</span></li>
-          <li><span class="num">2</span><span>Validaciones de integridad del modelado</span></li>
-          <li><span class="num">3</span><span>Verificación de objetos precedentes</span></li>
-          <li><span class="num">4</span><span>Importación y publicación de objetos</span></li>
+          <li><span class="num">1</span><span>Definición de la instalación</span></li>
+          <li><span class="num">2</span><span>Selección del archivo conteniendo el paquete</span></li>
+          <li><span class="num">3</span><span>Generación del paquete</span></li>
         </ul>
-        <div class="diana" style="margin-top:12px;font-size:0.88em;">Deyel Bot notifica la finalización y el estado por mensaje.</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 38 — SECCIÓN: MONITOREO
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 7</div>
+    <h2><span class="grad">Monitoreo<br>de Aplicaciones</span></h2>
+    <div class="sec-line"></div>
   </div>
 </section>
 
@@ -1036,14 +1028,14 @@
     <div class="two">
       <div class="card fragment fade-up">
         <div class="card-title">Para qué sirve</div>
-        <p>Revisar la ejecución de los objetos modelados, a través del registro de todas las acciones que ocurren durante su ejecución.</p>
-        <p style="margin-top:8px;">Permite definir <strong>niveles de registro</strong> para conocer el comportamiento según las necesidades.</p>
+        <p>Permite revisar la ejecución de los objetos modelados, a través del registro de todas las acciones que ocurren durante su ejecución.</p>
+        <p style="margin-top:8px;">Para analizar sus ejecuciones se pueden definir diferentes <strong>niveles de registro</strong> que permiten conocer el comportamiento de las aplicaciones según las necesidades del usuario.</p>
       </div>
       <div class="card fragment fade-up">
         <div class="card-title">Por ambiente</div>
         <ul>
-          <li><strong>Desarrollo:</strong> Todo lo ejecutado disponible</li>
-          <li><strong>Producción:</strong> Enfocarse en performance y errores</li>
+          <li><strong>Desarrollo:</strong> Se puede conocer todo lo ejecutado</li>
+          <li><strong>Producción:</strong> Enfocarse en mejoras de performance o consultar si existen errores</li>
         </ul>
         <div class="card-title" style="margin-top:16px;">Elementos</div>
         <ul>
@@ -1068,25 +1060,26 @@
         <ul>
           <li>Activar el registro</li>
           <li>Registrar una o varias aplicaciones</li>
-          <li>Activar tipos de objeto y acciones DeyelSDK</li>
-          <li>Seleccionar rango de fechas</li>
-          <li>Nivel: <strong>ERROR / WARNING / INFO</strong></li>
+          <li>Activar diferentes tipos de objeto. Si se incluyen reglas se pueden activar las acciones de Deyel SDK</li>
+          <li>Seleccionar un rango de fechas</li>
+          <li>Nivel de log definido en el ambiente: <strong>ERROR / WARNING / INFO</strong></li>
         </ul>
       </div>
       <div>
         <div class="card" style="margin-bottom:14px;">
           <div class="card-title">Notificación</div>
           <ul>
-            <li>Grilla de notificaciones configuradas</li>
+            <li>Grilla con notificaciones configuradas</li>
+            <li>Nuevas notificaciones</li>
             <li>Informadas por email o mensajería</li>
           </ul>
         </div>
         <div class="card fragment fade-up">
           <div class="card-title">Carga</div>
           <ul>
-            <li>Por día completo o rango horario</li>
-            <li>Notificación al finalizar</li>
-            <li>Cantidad de días definida en el ambiente</li>
+            <li>Por día completo o por rango horario</li>
+            <li>Se notifica la finalización</li>
+            <li>Cantidad de días definidos en el ambiente</li>
           </ul>
         </div>
       </div>
@@ -1103,7 +1096,8 @@
     <div class="line"></div>
     <div class="card fragment fade-up">
       <div class="card-title">Propósito: Auditoría</div>
-      <p>Se registran:</p>
+      <p>Se utiliza con fines de auditoría.</p>
+      <p style="margin-top:10px;">Se registran:</p>
       <ul>
         <li>Funciones de seguridad que tienen habilitada la propiedad <strong>Auditoría por Accesos</strong></li>
         <li>Eventos de seguridad predeterminados</li>
