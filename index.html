@@ -839,7 +839,18 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     SLIDE 31 — CONSOLA ADMINISTRACIÓN
+     SLIDE 31 — SECCIÓN: ADMIN AMBIENTES
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Módulo 6</div>
+    <h2><span class="grad">Administración<br>de Ambientes</span></h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 32 — CONSOLA ADMINISTRACIÓN
 ════════════════════════════════════════ -->
 <section class="content">
   <div class="si">
@@ -863,7 +874,7 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     SLIDE 32 — APLICACIONES
+     SLIDE 33 — APLICACIONES
 ════════════════════════════════════════ -->
 <section class="content">
   <div class="si">
@@ -885,7 +896,138 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     SLIDE 33 — CONSOLA DE EJECUCIÓN
+     SLIDE 34 — CONSTRUCCIÓN E INSTALACIÓN INTRO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Administración de Ambientes</div>
+    <h2>Construcción e Instalación de Aplicaciones y Cambios</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Necesidad</div>
+        <p>Implementar nuevas aplicaciones y transferir modificaciones de forma segura y confiable.</p>
+        <p style="margin-top:10px;"><strong>Flujo:</strong> Desarrollo &rarr; Test &rarr; Producción</p>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Funcionalidad</div>
+        <ul>
+          <li>Facilita la integración continua de aplicaciones</li>
+          <li>Permite el pasaje ordenado de cambios entre ambientes</li>
+          <li>El resultado es un paquete <strong>(archivo .zip)</strong> instalable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 35 — ASPECTOS DESTACADOS
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Administración de Ambientes</div>
+    <h2>Aspectos Destacados</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <ul class="steps">
+        <li><span class="num">✓</span><span><strong>Construcción:</strong> Deyel genera un paquete instalable con datos de configuración y objetos seleccionados</span></li>
+        <li><span class="num">✓</span><span><strong>Instalación:</strong> Deyel toma el paquete y lo instala en el ambiente destino, informando los resultados</span></li>
+        <li><span class="num">✓</span><span><strong>Instalación Atómica:</strong> El paquete se instala completo o no se instala nada</span></li>
+        <li><span class="num">✓</span><span><strong>Registro:</strong> Cada construcción e instalación queda registrada con su contenido y estado</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 36 — CONSTRUCCIÓN: CONCEPTO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Administración de Ambientes — Construcción</div>
+    <h2>Construcción</h2>
+    <div class="line"></div>
+    <div class="card fragment fade-up">
+      <p>Colección de objetos seleccionados y datos de entidades que se requiere instalar en un ambiente.</p>
+      <div class="card-title" style="margin-top:18px;">Contenido posible</div>
+      <ul>
+        <li>Una o más aplicaciones completas con todos sus objetos</li>
+        <li>Objetos seleccionados puntualmente de una o más aplicaciones</li>
+        <li>Datos de entidades</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 37 — CONSTRUCCIÓN DE APLICACIONES
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
+    <h2>Construcción de Aplicaciones y Cambios</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Pasos</div>
+        <ul class="steps">
+          <li><span class="num">1</span><span>Definición de la construcción</span></li>
+          <li><span class="num">2</span><span>Selección de objetos</span></li>
+          <li><span class="num">3</span><span>Gestión de dependencias</span></li>
+          <li><span class="num">4</span><span>Selección opcional de datos</span></li>
+          <li><span class="num">5</span><span>Generación del paquete</span></li>
+          <li><span class="num">6</span><span>Descarga del paquete</span></li>
+        </ul>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Selección de objetos</div>
+        <ul>
+          <li>Buscar, filtrar y seleccionar objetos publicados</li>
+          <li>Verificar precedentes y dependientes</li>
+          <li>Puede construirse sin dependientes si ya existen en destino</li>
+        </ul>
+        <div class="card-title" style="margin-top:14px;">Selección de entidades</div>
+        <p>Incluir datos de entidades para transferir junto con los objetos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 38 — INSTALACIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si">
+    <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
+    <h2>Instalación de Aplicaciones y Cambios</h2>
+    <div class="line"></div>
+    <div class="two">
+      <div class="card fragment fade-up">
+        <div class="card-title">Acciones durante instalación</div>
+        <ul>
+          <li>Crea objetos inexistentes</li>
+          <li>Actualiza los existentes</li>
+          <li>No modifica lo que no está incluido</li>
+          <li><strong>Instalación atómica:</strong> Todo o nada</li>
+        </ul>
+      </div>
+      <div class="card fragment fade-up">
+        <div class="card-title">Procesamiento</div>
+        <ul class="steps">
+          <li><span class="num">1</span><span>Análisis del estado de objetos dependientes</span></li>
+          <li><span class="num">2</span><span>Validaciones de integridad del modelado</span></li>
+          <li><span class="num">3</span><span>Verificación de objetos precedentes</span></li>
+          <li><span class="num">4</span><span>Importación y publicación de objetos</span></li>
+        </ul>
+        <div class="diana" style="margin-top:12px;font-size:0.88em;">Deyel Bot notifica la finalización y el estado por mensaje.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 39 — CONSOLA DE EJECUCIÓN
 ════════════════════════════════════════ -->
 <section class="content">
   <div class="si">
@@ -914,7 +1056,7 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     SLIDE 34 — CONFIGURACIÓN CONSOLA
+     SLIDE 40 — CONFIGURACIÓN CONSOLA
 ════════════════════════════════════════ -->
 <section class="content">
   <div class="si">
@@ -953,7 +1095,7 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     SLIDE 35 — CONSOLA DE LOGS
+     SLIDE 41 — CONSOLA DE LOGS
 ════════════════════════════════════════ -->
 <section class="content">
   <div class="si">
@@ -967,148 +1109,6 @@
         <li>Eventos de seguridad predeterminados</li>
       </ul>
       <p style="margin-top:14px;color:rgba(255,255,255,0.55);font-size:0.9em;">Tiempo de almacenamiento configurado en el ambiente.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SLIDE 36 — SECCIÓN: ADMIN AMBIENTES
-════════════════════════════════════════ -->
-<section class="sec" data-transition="zoom">
-  <div class="si">
-    <div class="eyebrow">Módulo 6</div>
-    <h2><span class="grad">Administración<br>de Ambientes</span></h2>
-    <div class="sec-line"></div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SLIDE 37 — CONSTRUCCIÓN E INSTALACIÓN INTRO
-════════════════════════════════════════ -->
-<section class="content">
-  <div class="si">
-    <div class="breadcrumb">Administración de Ambientes</div>
-    <h2>Construcción e Instalación de Aplicaciones y Cambios</h2>
-    <div class="line"></div>
-    <div class="two">
-      <div class="card fragment fade-up">
-        <div class="card-title">Necesidad</div>
-        <p>Implementar nuevas aplicaciones y transferir modificaciones de forma segura y confiable.</p>
-        <p style="margin-top:10px;"><strong>Flujo:</strong> Desarrollo &rarr; Test &rarr; Producción</p>
-      </div>
-      <div class="card fragment fade-up">
-        <div class="card-title">Funcionalidad</div>
-        <ul>
-          <li>Facilita la integración continua de aplicaciones</li>
-          <li>Permite el pasaje ordenado de cambios entre ambientes</li>
-          <li>El resultado es un paquete <strong>(archivo .zip)</strong> instalable</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SLIDE 38 — ASPECTOS DESTACADOS
-════════════════════════════════════════ -->
-<section class="content">
-  <div class="si">
-    <div class="breadcrumb">Administración de Ambientes</div>
-    <h2>Aspectos Destacados</h2>
-    <div class="line"></div>
-    <div class="card fragment fade-up">
-      <ul class="steps">
-        <li><span class="num">✓</span><span><strong>Construcción:</strong> Deyel genera un paquete instalable con datos de configuración y objetos seleccionados</span></li>
-        <li><span class="num">✓</span><span><strong>Instalación:</strong> Deyel toma el paquete y lo instala en el ambiente destino, informando los resultados</span></li>
-        <li><span class="num">✓</span><span><strong>Instalación Atómica:</strong> El paquete se instala completo o no se instala nada</span></li>
-        <li><span class="num">✓</span><span><strong>Registro:</strong> Cada construcción e instalación queda registrada con su contenido y estado</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SLIDE 39 — CONSTRUCCIÓN: CONCEPTO
-════════════════════════════════════════ -->
-<section class="content">
-  <div class="si">
-    <div class="breadcrumb">Administración de Ambientes — Construcción</div>
-    <h2>Construcción</h2>
-    <div class="line"></div>
-    <div class="card fragment fade-up">
-      <p>Colección de objetos seleccionados y datos de entidades que se requiere instalar en un ambiente.</p>
-      <div class="card-title" style="margin-top:18px;">Contenido posible</div>
-      <ul>
-        <li>Una o más aplicaciones completas con todos sus objetos</li>
-        <li>Objetos seleccionados puntualmente de una o más aplicaciones</li>
-        <li>Datos de entidades</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SLIDE 40 — CONSTRUCCIÓN DE APLICACIONES
-════════════════════════════════════════ -->
-<section class="content">
-  <div class="si">
-    <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
-    <h2>Construcción de Aplicaciones y Cambios</h2>
-    <div class="line"></div>
-    <div class="two">
-      <div class="card fragment fade-up">
-        <div class="card-title">Pasos</div>
-        <ul class="steps">
-          <li><span class="num">1</span><span>Definición de la construcción</span></li>
-          <li><span class="num">2</span><span>Selección de objetos</span></li>
-          <li><span class="num">3</span><span>Gestión de dependencias</span></li>
-          <li><span class="num">4</span><span>Selección opcional de datos</span></li>
-          <li><span class="num">5</span><span>Generación del paquete</span></li>
-          <li><span class="num">6</span><span>Descarga del paquete</span></li>
-        </ul>
-      </div>
-      <div class="card fragment fade-up">
-        <div class="card-title">Selección de objetos</div>
-        <ul>
-          <li>Buscar, filtrar y seleccionar objetos publicados</li>
-          <li>Verificar precedentes y dependientes</li>
-          <li>Puede construirse sin dependientes si ya existen en destino</li>
-        </ul>
-        <div class="card-title" style="margin-top:14px;">Selección de entidades</div>
-        <p>Incluir datos de entidades para transferir junto con los objetos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SLIDE 41 — INSTALACIÓN
-════════════════════════════════════════ -->
-<section class="content">
-  <div class="si">
-    <div class="breadcrumb">Consola de Administración — Aplicaciones</div>
-    <h2>Instalación de Aplicaciones y Cambios</h2>
-    <div class="line"></div>
-    <div class="two">
-      <div class="card fragment fade-up">
-        <div class="card-title">Acciones durante instalación</div>
-        <ul>
-          <li>Crea objetos inexistentes</li>
-          <li>Actualiza los existentes</li>
-          <li>No modifica lo que no está incluido</li>
-          <li><strong>Instalación atómica:</strong> Todo o nada</li>
-        </ul>
-      </div>
-      <div class="card fragment fade-up">
-        <div class="card-title">Procesamiento</div>
-        <ul class="steps">
-          <li><span class="num">1</span><span>Análisis del estado de objetos dependientes</span></li>
-          <li><span class="num">2</span><span>Validaciones de integridad del modelado</span></li>
-          <li><span class="num">3</span><span>Verificación de objetos precedentes</span></li>
-          <li><span class="num">4</span><span>Importación y publicación de objetos</span></li>
-        </ul>
-        <div class="diana" style="margin-top:12px;font-size:0.88em;">Deyel Bot notifica la finalización y el estado por mensaje.</div>
-      </div>
     </div>
   </div>
 </section>
