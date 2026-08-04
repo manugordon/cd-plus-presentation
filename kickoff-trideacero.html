@@ -25,6 +25,14 @@
       display: inline-block;
       line-height: 0;
     }
+    .filled {
+      background: rgba(255, 200, 50, 0.12);
+      border: 1px dashed rgba(255, 200, 50, 0.5);
+      border-radius: 6px;
+      padding: 1px 8px;
+      color: rgba(255, 210, 80, 0.9);
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
@@ -237,9 +245,9 @@
         <div class="card-title">Seguimiento Semanal (Weekly)</div>
         <ul>
           <li>Weeklys para detallar riesgos, avances del sprint y próximos pasos</li>
-          <li>Día y hora: <span class="placeholder">[indicar día y horario]</span></li>
-          <li>Responsable de agenda: <span class="placeholder">[nombre y rol]</span></li>
-          <li>Canal de comunicación: <span class="placeholder">[WhatsApp / Slack / Teams]</span></li>
+          <li>Día y hora: <span class="filled">Jueves 17:00 ARG / 14:00 MEX</span></li>
+          <li>Responsable de agenda: <span class="filled">Manuel Gordon</span></li>
+          <li>Canal de comunicación: <span class="filled">Google Meet</span></li>
         </ul>
       </div>
 
@@ -272,30 +280,30 @@
       <div class="card fragment fade-up">
         <div class="card-title" style="color:#4A7AFF;">Optaris</div>
         <ul>
-          <li><strong>Líder de Proyecto:</strong> <span class="placeholder">[Nombre]</span></li>
-          <li><strong>Modelador/es:</strong> <span class="placeholder">[Nombre/s]</span></li>
-          <li><strong>PMO Partner:</strong> <span class="placeholder">[Si corresponde]</span></li>
+          <li><strong>Líder de Proyecto:</strong> <span class="filled">Manuel Gordon</span></li>
+          <li><strong>Modelador:</strong> <span class="filled">Joaquín Martínez</span></li>
         </ul>
       </div>
 
       <div class="card fragment fade-up">
         <div class="card-title" style="color:#E0176B;">Cliente — Trideacero</div>
         <ul>
-          <li><strong>Responsable de Producto (PO):</strong> <span class="placeholder">[Nombre]</span></li>
-          <li><strong>Líder de Proyecto:</strong> <span class="placeholder">[Nombre]</span></li>
-          <li><strong>Referentes de módulos:</strong> <span class="placeholder">[Nombres]</span></li>
-          <li><strong>Responsable de TI:</strong> <span class="placeholder">[Nombre]</span></li>
+          <li><strong>Responsable de Producto (PO):</strong> <span class="filled">Alberto Muñoz</span></li>
+          <li><strong>Líder de Proyecto:</strong> <span class="filled">Alberto Muñoz</span></li>
+          <li><strong>Referentes de módulos:</strong> <span class="filled">Alberto Muñoz</span></li>
+          <li><strong>Responsable de TI:</strong> <span class="filled">Alberto Muñoz</span></li>
         </ul>
       </div>
 
       <div class="card fragment fade-up" style="grid-column:1/-1;">
         <div class="card-title">Datos del Proyecto</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;font-size:0.96em;">
-          <div><strong>Nombre del Proyecto:</strong> <span class="placeholder">[Nombre]</span></div>
-          <div><strong>Plazo de garantía:</strong> <span class="placeholder">[período]</span></div>
-          <div><strong>Fecha de Inicio:</strong> <span class="placeholder">[fecha]</span></div>
-          <div><strong>Fin estimado de garantía:</strong> <span class="placeholder">[fecha]</span></div>
-          <div><strong>Fecha de Finalización:</strong> <span class="placeholder">[fecha]</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;font-size:0.96em;color:var(--text);">
+          <div><strong>Nombre del Proyecto:</strong> <span class="filled">Trideacero CRM y Vendor</span></div>
+          <div><strong>Plazo del Proyecto:</strong> <span class="filled">4 semanas</span></div>
+          <div><strong>Fecha de Inicio:</strong> <span class="filled">10/08/2026</span></div>
+          <div><strong>Fecha de Finalización:</strong> <span class="filled">07/09/2026</span></div>
+          <div><strong>Plazo de garantía:</strong> <span class="filled">15 días</span></div>
+          <div><strong>Fin estimado de garantía:</strong> <span class="filled">22/09/2026</span></div>
         </div>
       </div>
 
@@ -327,7 +335,7 @@
         <div class="card-title">Estructura de Sprints</div>
         <ul class="steps">
           <li><span class="num">1</span><span>Sprints de <strong>15 días</strong> de duración</span></li>
-          <li><span class="num">2</span><span>Primer sprint: <span class="placeholder">[fecha inicio]</span> → <span class="placeholder">[fecha fin]</span></span></li>
+          <li><span class="num">2</span><span>Primer sprint: <span class="filled">10/08/2026</span> → <span class="filled">25/08/2026</span></span></li>
           <li><span class="num">3</span><span>Sprint Demo 2 días después de finalizado cada sprint</span></li>
           <li><span class="num">4</span><span>Release a ambiente de Test al finalizar cada release</span></li>
         </ul>
