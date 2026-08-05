@@ -146,24 +146,26 @@
       <div class="card" style="padding:16px 20px;">
         <div class="card-title">Módulo CRM</div>
         <ul style="font-size:0.82em;">
-          <li>Manejo de cuentas, oportunidades y seguimiento de acciones diarias del Vendedor</li>
-          <li>Dashboards, pipeline, forecast, KPIs operacionales y gerenciales</li>
-          <li>El Vendedor envía a cotizar a Compras los materiales para la propuesta comercial del cliente</li>
-          <li>Generación de propuesta comercial al cliente con márgenes (profit) configurables</li>
-          <li>En caso de ganar la oportunidad, se envía confirmación a Compras para iniciar la OC</li>
-          <li>Dashboard con estatus de solicitudes del Comercial</li>
+          <li>Manejo de cuentas, oportunidades, seguimiento de acciones diarias del Vendedor.</li>
+          <li>Dashboards, pipeline, forecast KPI's operacionales y Gerenciales</li>
+          <li>El vendedor envia a cotizar al área de Compras los materiales para la propuesta comercial del cliente.</li>
+          <li>Una vez cotizado, se podrá generar la propuesta comercial al cliente, considerando los márgenes (profit) asociados a este (Tabla auxiliar).</li>
+          <li>En caso de ganar la oportunidad, se envía la confirmación a Compras para que inicie el proceso de compra.</li>
+          <li>El comercial, podrá verificar un dashboard con los estatus de sus solicitudes.</li>
         </ul>
       </div>
       <div class="card" style="padding:16px 20px;">
-        <div class="card-title">P2P · Cotización</div>
+        <div class="card-title">Módulo P2P (Procurement to Pay): Cotización</div>
         <ul style="font-size:0.82em;">
-          <li>Compras recibe la solicitud comercial y solicita cotización a proveedores</li>
-          <li>El comprador define qué proveedores participan; se les notifica por correo y/o WhatsApp</li>
-          <li>Rastreo de proveedores que ya presentaron sus ofertas</li>
-          <li>Pantalla de comparación de precios para analizar las ofertas en línea</li>
-          <li>Se selecciona al proveedor con mejores condiciones y se regresa la info a Ventas</li>
-          <li>El Comercial notifica el cierre via Nota de Venta para continuar con la OC</li>
-          <li>La OC debe ser validada por el comprador y enviada al Gerente para aprobación</li>
+          <li>Compras recibe la solicitud del área comercial, y solicita la cotización a proveedores.</li>
+          <li>El comprador define qué proveedores participarán en el proceso de concurso. Posteriormente, se les notificará por correo electrónico.</li>
+          <li>Toda interacción será realizada por correo electrónico y/o whastapp</li>
+          <li>El comprador puede rastrear qué proveedores ya han presentado sus ofertas.</li>
+          <li>Una vez recibidas todas las ofertas, puede consultar una pantalla de comparación de precios para analizar los puntos relevantes para su decisión en línea.</li>
+          <li>Selecciona al proveedor con las mejores condiciones, y con esta información, se regresa a Ventas para cotizar con el margen preestablecido.</li>
+          <li>El Comercial, notifica atraves de la Nota de Venta el cierre de la oportunidad (negocio cerrado), para continuar con el proceso de OC.</li>
+          <li>La orden de compra generada en el proceso deberá ser validada por el comprador y enviada al Gerente de Compras para su aprobación (los niveles de aprobación pueden ser parametrizados).</li>
+          <li>Una orden de compra puede contener varias solicitudes de compra. Y cada ítem de la solicitud se puede generar una OC.</li>
         </ul>
       </div>
     </div>
@@ -177,15 +179,14 @@
   <div class="si" style="padding:36px 60px;gap:14px;">
     <div style="flex-shrink:0;">
       <div class="breadcrumb">Alcance del Proyecto</div>
-      <h2 style="margin:0 0 8px;">P2P · Orden de Compra</h2>
+      <h2 style="margin:0 0 8px;">Módulo P2P (Procurement to Pay): Orden de Compra (OC)</h2>
       <div class="line" style="margin-bottom:0;"></div>
     </div>
     <div class="card">
       <ul>
-        <li>La OC debe ser validada por el comprador y enviada al Gerente de Compras para aprobación (niveles de aprobación parametrizables)</li>
-        <li>La OC puede ser parcial o completa con relación al pedido del cliente</li>
-        <li>Una OC puede contener varias solicitudes de compra; cada ítem puede generar una OC independiente</li>
-        <li>La OC se envía al proveedor por correo electrónico</li>
+        <li>La orden de compra generada en el proceso deberá ser validada por el comprador y enviada al Gerente de Compras para su aprobación (los niveles de aprobación pueden ser parametrizados).</li>
+        <li>La orden de compra puede ser parcial o completa, con relación al pedido del cliente.</li>
+        <li>Una orden de compra puede contener varias solicitudes de compra. Y cada ítem de la solicitud se puede generar una OC. OC se tendrá que enviar al proveedor por correo electrónico</li>
       </ul>
     </div>
   </div>
@@ -198,26 +199,26 @@
   <div class="si" style="padding:28px 52px;gap:12px;">
     <div style="flex-shrink:0;">
       <div class="breadcrumb">Alcance del Proyecto</div>
-      <h2 style="margin:0 0 6px;font-size:1.6em;">P2P · Recepción, Factura y Orden de Pago</h2>
+      <h2 style="margin:0 0 6px;font-size:1.6em;">Módulo P2P: Recepción y Factura / Orden de Pago</h2>
       <div class="line" style="margin-bottom:0;"></div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
       <div class="card" style="padding:16px 20px;">
         <div class="card-title">Recepción y Factura</div>
         <ul style="font-size:0.82em;">
-          <li>El usuario crea una recepción seleccionando la OC asociada (parcial o total)</li>
-          <li>Se notifica al proveedor por correo para que envíe la factura correspondiente</li>
-          <li>El sistema lee los correos con la factura y la sube al portal</li>
-          <li>Se validan los datos de la factura o XML contra la recepción (monto, proveedor, impuestos)</li>
-          <li>El comprobante queda disponible para aprobación y creación de la orden de pago</li>
+          <li>Una vez recibido el producto o prestado el servicio, el usuario debe crear una recepción en la plataforma (Compras) y seleccionar la orden de compra asociada. Es posible seleccionar si el recibimiento fue parcial o total para esa orden de compra.</li>
+          <li>Al finalizar este proceso, se notifica al proveedor para que se envíe por correo electrónico la factura correspondiente.</li>
+          <li>VM deberá leer los correos con la entrada de factura y subirlo al portal.</li>
+          <li>Con base en los datos extraídos de la factura o del XML (formato válido), se validan con los datos de la recepción para verificar que el monto total, el proveedor, el subtotal y el monto de impuestos coincidan entre sí.</li>
+          <li>Una vez finalizado, el comprobante de factura queda disponible para aprobación y posterior creación de la orden de pago.</li>
         </ul>
       </div>
       <div class="card" style="padding:16px 20px;">
         <div class="card-title">Orden de Pago</div>
         <ul style="font-size:0.82em;">
-          <li>Finanzas crea la orden de pago seleccionando la factura a pagar</li>
-          <li>Determina el importe, la fecha y el método de pago (transferencia, cheque, etc.)</li>
-          <li>Tras el pago, se adjunta el comprobante que el proveedor puede consultar</li>
+          <li>El responsable de Finanzas comenzará creando la orden de pago y seleccionando la factura a pagar.</li>
+          <li>Determinará el importe, la fecha y el método de pago (por ejemplo, transferencia bancaria, cheque, etc.).</li>
+          <li>Tras realizar el pago, se podrá adjuntar el comprobante de pago en el último paso, que el proveedor podrá consultar.</li>
         </ul>
       </div>
     </div>
@@ -231,13 +232,13 @@
   <div class="si" style="padding:36px 60px;gap:14px;">
     <div style="flex-shrink:0;">
       <div class="breadcrumb">Alcance del Proyecto</div>
-      <h2 style="margin:0 0 8px;">P2P · Gestión de Ítems</h2>
+      <h2 style="margin:0 0 8px;">Módulo P2P: Items / Gestión de items</h2>
       <div class="line" style="margin-bottom:0;"></div>
     </div>
     <div class="card">
       <ul>
-        <li>Los responsables de almacén mantienen el catálogo de ítems: código de barras, gestión por lote o número de serie, unidad de medida, unidades alternativas, grupo de ítems peligrosos, etc.</li>
-        <li>Si el ítem no está disponible en el catálogo, el Vendedor puede ingresarlo de forma sencilla</li>
+        <li>Los usuarios responsables de los almacenes mantienen el catálogo de ítems que se pueden registrar en el almacén. Cada ítem puede definir su Código de barras, si se gestiona por lote, por número de serie, la unidad de medida en que se mantendrá el stock, sus unidades de medida alternativas, el grupo de ítems peligros al que pertenece, etc.</li>
+        <li>Si el ITEM no esta disponible, se deberá poder ingresar por el Vendedor, de una manera sencilla.</li>
       </ul>
     </div>
   </div>
@@ -250,15 +251,15 @@
   <div class="si" style="padding:36px 60px;gap:14px;">
     <div style="flex-shrink:0;">
       <div class="breadcrumb">Alcance del Proyecto</div>
-      <h2 style="margin:0 0 8px;">Consideraciones Especiales</h2>
+      <h2 style="margin:0 0 8px;">Consideraciones especiales:</h2>
       <div class="line" style="margin-bottom:0;"></div>
     </div>
     <div class="card">
       <ul class="steps">
-        <li><span class="num">✓</span><span>Carga masiva inicial de proveedores, clientes e ítems</span></li>
-        <li><span class="num">✓</span><span>Capacitación de Vendor y CRM incluida</span></li>
-        <li><span class="num">✓</span><span>Se incluye la elaboración de un video de capacitación con la ejecución de los procesos por personaje (Vendedor, Comprador, Proveedor, Almacén y Tesorería)</span></li>
-        <li><span class="num">✓</span><span>Cualquier personalización no descrita en esta propuesta debe negociarse con el equipo Comercial y/o considerarse una Solicitud de Cambio, lo que puede afectar el costo/plazo del proyecto</span></li>
+        <li><span class="num">✓</span><span>Se considera una carga masiva inicial de proveedores, clientes e items.</span></li>
+        <li><span class="num">✓</span><span>Se considera capacitación de Vendor y CRM.</span></li>
+        <li><span class="num">✓</span><span>Se incluye la elaboración de un video de capacitación con la ejecución de los procesos de la solución por personaje (Vendedor, Comprador, Proveedor, Almacén y Tesorería)</span></li>
+        <li><span class="num">✓</span><span>Cualquier personalización no descrita en esta propuesta debe negociarse con el equipo Comercial y/o considerarse una Solicitud de Cambio, lo que puede afectar el costo/plazo del proyecto.</span></li>
       </ul>
     </div>
   </div>
