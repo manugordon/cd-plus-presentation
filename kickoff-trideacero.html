@@ -95,24 +95,171 @@
     <div class="agenda-grid">
       <div class="ag-item fragment fade-up">
         <div class="ag-num grad">1</div>
-        <div class="ag-text">Personajes e Historias de Usuarios</div>
+        <div class="ag-text">Repaso del Alcance</div>
       </div>
       <div class="ag-item fragment fade-up">
         <div class="ag-num grad">2</div>
-        <div class="ag-text">Metodología de Trabajo</div>
+        <div class="ag-text">Personajes e Historias de Usuarios</div>
       </div>
       <div class="ag-item fragment fade-up">
         <div class="ag-num grad">3</div>
-        <div class="ag-text">Equipos de Trabajo</div>
+        <div class="ag-text">Metodología de Trabajo</div>
       </div>
       <div class="ag-item fragment fade-up">
         <div class="ag-num grad">4</div>
-        <div class="ag-text">Plan de Trabajo y Entregables</div>
+        <div class="ag-text">Equipos de Trabajo</div>
       </div>
       <div class="ag-item fragment fade-up">
         <div class="ag-num grad">5</div>
+        <div class="ag-text">Plan de Trabajo y Entregables</div>
+      </div>
+      <div class="ag-item fragment fade-up">
+        <div class="ag-num grad">6</div>
         <div class="ag-text">Responsabilidades y Cambios</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECCIÓN: REPASO DEL ALCANCE
+════════════════════════════════════════ -->
+<section class="sec" data-transition="zoom">
+  <div class="si">
+    <div class="eyebrow">Sección 1</div>
+    <h2>Repaso del <span class="grad">Alcance</span></h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ALCANCE 1 — CRM + P2P COTIZACIÓN
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:28px 52px;gap:12px;">
+    <div style="flex-shrink:0;">
+      <div class="breadcrumb">Alcance del Proyecto</div>
+      <h2 style="margin:0 0 6px;font-size:1.6em;">Módulo CRM y P2P · Cotización</h2>
+      <div class="line" style="margin-bottom:0;"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="card" style="padding:16px 20px;">
+        <div class="card-title">Módulo CRM</div>
+        <ul style="font-size:0.82em;">
+          <li>Manejo de cuentas, oportunidades y seguimiento de acciones diarias del Vendedor</li>
+          <li>Dashboards, pipeline, forecast, KPIs operacionales y gerenciales</li>
+          <li>El Vendedor envía a cotizar a Compras los materiales para la propuesta comercial del cliente</li>
+          <li>Generación de propuesta comercial al cliente con márgenes (profit) configurables</li>
+          <li>En caso de ganar la oportunidad, se envía confirmación a Compras para iniciar la OC</li>
+          <li>Dashboard con estatus de solicitudes del Comercial</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:16px 20px;">
+        <div class="card-title">P2P · Cotización</div>
+        <ul style="font-size:0.82em;">
+          <li>Compras recibe la solicitud comercial y solicita cotización a proveedores</li>
+          <li>El comprador define qué proveedores participan; se les notifica por correo y/o WhatsApp</li>
+          <li>Rastreo de proveedores que ya presentaron sus ofertas</li>
+          <li>Pantalla de comparación de precios para analizar las ofertas en línea</li>
+          <li>Se selecciona al proveedor con mejores condiciones y se regresa la info a Ventas</li>
+          <li>El Comercial notifica el cierre via Nota de Venta para continuar con la OC</li>
+          <li>La OC debe ser validada por el comprador y enviada al Gerente para aprobación</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ALCANCE 2 — ORDEN DE COMPRA
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:36px 60px;gap:14px;">
+    <div style="flex-shrink:0;">
+      <div class="breadcrumb">Alcance del Proyecto</div>
+      <h2 style="margin:0 0 8px;">P2P · Orden de Compra</h2>
+      <div class="line" style="margin-bottom:0;"></div>
+    </div>
+    <div class="card">
+      <ul>
+        <li>La OC debe ser validada por el comprador y enviada al Gerente de Compras para aprobación (niveles de aprobación parametrizables)</li>
+        <li>La OC puede ser parcial o completa con relación al pedido del cliente</li>
+        <li>Una OC puede contener varias solicitudes de compra; cada ítem puede generar una OC independiente</li>
+        <li>La OC se envía al proveedor por correo electrónico</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ALCANCE 3 — RECEPCIÓN, FACTURA, PAGO
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:28px 52px;gap:12px;">
+    <div style="flex-shrink:0;">
+      <div class="breadcrumb">Alcance del Proyecto</div>
+      <h2 style="margin:0 0 6px;font-size:1.6em;">P2P · Recepción, Factura y Orden de Pago</h2>
+      <div class="line" style="margin-bottom:0;"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="card" style="padding:16px 20px;">
+        <div class="card-title">Recepción y Factura</div>
+        <ul style="font-size:0.82em;">
+          <li>El usuario crea una recepción seleccionando la OC asociada (parcial o total)</li>
+          <li>Se notifica al proveedor por correo para que envíe la factura correspondiente</li>
+          <li>El sistema lee los correos con la factura y la sube al portal</li>
+          <li>Se validan los datos de la factura o XML contra la recepción (monto, proveedor, impuestos)</li>
+          <li>El comprobante queda disponible para aprobación y creación de la orden de pago</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:16px 20px;">
+        <div class="card-title">Orden de Pago</div>
+        <ul style="font-size:0.82em;">
+          <li>Finanzas crea la orden de pago seleccionando la factura a pagar</li>
+          <li>Determina el importe, la fecha y el método de pago (transferencia, cheque, etc.)</li>
+          <li>Tras el pago, se adjunta el comprobante que el proveedor puede consultar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ALCANCE 4 — GESTIÓN DE ÍTEMS
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:36px 60px;gap:14px;">
+    <div style="flex-shrink:0;">
+      <div class="breadcrumb">Alcance del Proyecto</div>
+      <h2 style="margin:0 0 8px;">P2P · Gestión de Ítems</h2>
+      <div class="line" style="margin-bottom:0;"></div>
+    </div>
+    <div class="card">
+      <ul>
+        <li>Los responsables de almacén mantienen el catálogo de ítems: código de barras, gestión por lote o número de serie, unidad de medida, unidades alternativas, grupo de ítems peligrosos, etc.</li>
+        <li>Si el ítem no está disponible en el catálogo, el Vendedor puede ingresarlo de forma sencilla</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ALCANCE 5 — CONSIDERACIONES ESPECIALES
+════════════════════════════════════════ -->
+<section class="content">
+  <div class="si" style="padding:36px 60px;gap:14px;">
+    <div style="flex-shrink:0;">
+      <div class="breadcrumb">Alcance del Proyecto</div>
+      <h2 style="margin:0 0 8px;">Consideraciones Especiales</h2>
+      <div class="line" style="margin-bottom:0;"></div>
+    </div>
+    <div class="card">
+      <ul class="steps">
+        <li><span class="num">✓</span><span>Carga masiva inicial de proveedores, clientes e ítems</span></li>
+        <li><span class="num">✓</span><span>Capacitación de Vendor y CRM incluida</span></li>
+        <li><span class="num">✓</span><span>Se incluye la elaboración de un video de capacitación con la ejecución de los procesos por personaje (Vendedor, Comprador, Proveedor, Almacén y Tesorería)</span></li>
+        <li><span class="num">✓</span><span>Cualquier personalización no descrita en esta propuesta debe negociarse con el equipo Comercial y/o considerarse una Solicitud de Cambio, lo que puede afectar el costo/plazo del proyecto</span></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -122,7 +269,7 @@
 ════════════════════════════════════════ -->
 <section class="sec" data-transition="zoom">
   <div class="si">
-    <div class="eyebrow">Sección 1</div>
+    <div class="eyebrow">Sección 2</div>
     <h2>Personajes e <span class="grad">Historias<br>de Usuarios</span></h2>
     <div class="sec-line"></div>
   </div>
@@ -203,7 +350,7 @@
 ════════════════════════════════════════ -->
 <section class="sec" data-transition="zoom">
   <div class="si">
-    <div class="eyebrow">Sección 2</div>
+    <div class="eyebrow">Sección 3</div>
     <h2><span class="grad">Metodología</span><br>de Trabajo</h2>
     <div class="sec-line"></div>
   </div>
@@ -260,7 +407,7 @@
 ════════════════════════════════════════ -->
 <section class="sec" data-transition="zoom">
   <div class="si">
-    <div class="eyebrow">Sección 3</div>
+    <div class="eyebrow">Sección 4</div>
     <h2>Equipos de <span class="grad">Trabajo</span></h2>
     <div class="sec-line"></div>
   </div>
@@ -316,7 +463,7 @@
 ════════════════════════════════════════ -->
 <section class="sec" data-transition="zoom">
   <div class="si">
-    <div class="eyebrow">Sección 4</div>
+    <div class="eyebrow">Sección 5</div>
     <h2>Plan de <span class="grad">Trabajo</span></h2>
     <div class="sec-line"></div>
   </div>
@@ -361,7 +508,7 @@
 ════════════════════════════════════════ -->
 <section class="sec" data-transition="zoom">
   <div class="si">
-    <div class="eyebrow">Sección 5</div>
+    <div class="eyebrow">Sección 6</div>
     <h2>Responsabilidades<br>del <span class="grad">Equipo</span></h2>
     <div class="sec-line"></div>
   </div>
@@ -493,7 +640,7 @@
 ════════════════════════════════════════ -->
 <section class="sec" data-transition="zoom">
   <div class="si">
-    <div class="eyebrow">Sección 6</div>
+    <div class="eyebrow">Sección 7</div>
     <h2>Tratamiento de <span class="grad">Cambios</span></h2>
     <div class="sec-line"></div>
   </div>
